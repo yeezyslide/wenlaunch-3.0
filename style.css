@@ -1084,6 +1084,110 @@ h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacin
   color: var(--text-secondary);
 }
 
+/* ---- WORKS PAGE ---- */
+
+.works-hero {
+  padding: 198px 0 60px;
+}
+
+.works-headline {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.works-sub {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.works-filters {
+  padding: 0 0 48px;
+  position: sticky;
+  top: 98px;
+  z-index: 50;
+  background: var(--bg);
+  padding-top: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover {
+  border-color: var(--text-muted);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  background: var(--bg-dark);
+  color: white;
+  border-color: var(--bg-dark);
+}
+
+.works-grid-section {
+  padding: 0 0 var(--section-gap);
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.works-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.works-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+.works-image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-muted);
+}
+
+.works-info {
+  padding: 24px;
+}
+
+.works-info h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.works-info p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 /* ---- RESPONSIVE ---- */
 
 @media (max-width: 768px) {
@@ -1093,6 +1197,7 @@ h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacin
   .pain-grid,
   .pricing-grid,
   .work-grid,
+  .works-grid,
   .testimonial-grid,
   .process-grid,
   .icp-grid {
